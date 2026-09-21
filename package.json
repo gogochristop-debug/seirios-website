@@ -1,0 +1,13 @@
+{
+  "name": "ge-seirios-website",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs dist",
+    "check": "node --check src/main.js && node scripts/build.mjs && node scripts/verify-deployment.mjs",
+    "deploy": "npm run build && npx wrangler deploy"
+  }
+}

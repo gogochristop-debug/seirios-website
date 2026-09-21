@@ -39,7 +39,10 @@ npm run preview
 
 ```bash
 npm run build
-npx wrangler pages deploy dist
+npx wrangler pages deploy
 ```
+
+Το `wrangler.toml` περιορίζει ρητά το deployment στο παραγόμενο `dist/`. Μην
+χρησιμοποιείτε τη ρίζα του repository ως output directory.
 
 > Η φόρμα επικοινωνίας λειτουργεί ως UI επίδειξης. Για αποστολή email, συνδέστε την αργότερα με Cloudflare Pages Functions ή την υπηρεσία φορμών της επιλογής σας.

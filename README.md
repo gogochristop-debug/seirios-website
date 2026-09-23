@@ -39,10 +39,12 @@ npm run preview
 
 ```bash
 npm run build
-npx wrangler pages deploy
+npm run deploy
 ```
 
-Το `wrangler.toml` περιορίζει ρητά το deployment στο παραγόμενο `dist/`. Μην
-χρησιμοποιείτε τη ρίζα του repository ως output directory.
+Η εντολή deployment χρησιμοποιεί το `wrangler pages deploy` για το Pages project
+`seirios-website`, ενώ το `wrangler.toml` περιορίζει ρητά το deployment στο
+παραγόμενο `dist/`. Μην χρησιμοποιείτε το `wrangler deploy` ή τη ρίζα του
+repository ως output directory.
 
 > Η φόρμα επικοινωνίας λειτουργεί ως UI επίδειξης. Για αποστολή email, συνδέστε την αργότερα με Cloudflare Pages Functions ή την υπηρεσία φορμών της επιλογής σας.

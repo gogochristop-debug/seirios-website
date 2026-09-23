@@ -1,3 +1,5 @@
 name = "seirios-website"
 compatibility_date = "2026-09-21"
-pages_build_output_dir = "./dist"
+
+[assets]
+directory = "./dist"

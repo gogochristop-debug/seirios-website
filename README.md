@@ -27,24 +27,21 @@ npm run build
 npm run preview
 ```
 
-## Deployment στο Cloudflare Pages
+## Deployment στο Cloudflare Workers
 
-1. Συνδέστε το Git repository σε ένα νέο **Cloudflare Pages** project.
-2. Επιλέξτε το generic/static framework preset.
-3. Ορίστε build command: `npm run build`.
-4. Ορίστε output directory: `dist`.
-5. Δεν απαιτούνται environment variables για τη βασική έκδοση.
+Το repository αναπτύσσεται στο υπάρχον Cloudflare Worker **`seirios-website`**
+με το Workers Builds. Στις ρυθμίσεις του Worker ορίστε build command
+`npm run build` και deploy command `npx wrangler deploy`. Το `wrangler.toml`
+ρυθμίζει το Workers Static Assets ώστε να εξυπηρετεί το παραγόμενο `dist/`.
 
-Εναλλακτικά, με εγκατεστημένο Wrangler:
+Για χειροκίνητο deployment με το Wrangler:
 
 ```bash
 npm run build
 npm run deploy
 ```
 
-Η εντολή deployment χρησιμοποιεί το `wrangler pages deploy` για το Pages project
-`seirios-website`, ενώ το `wrangler.toml` περιορίζει ρητά το deployment στο
-παραγόμενο `dist/`. Μην χρησιμοποιείτε το `wrangler deploy` ή τη ρίζα του
-repository ως output directory.
+Η εντολή κάνει deploy τα static assets στο υπάρχον Worker `seirios-website`.
+Δεν δημιουργεί ούτε χρησιμοποιεί Cloudflare Pages project.
 
-> Η φόρμα επικοινωνίας λειτουργεί ως UI επίδειξης. Για αποστολή email, συνδέστε την αργότερα με Cloudflare Pages Functions ή την υπηρεσία φορμών της επιλογής σας.
+> Η φόρμα επικοινωνίας λειτουργεί ως UI επίδειξης. Για αποστολή email, συνδέστε την αργότερα με Worker ή την υπηρεσία φορμών της επιλογής σας.

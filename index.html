@@ -3,135 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#071f50" />
-    <meta name="description" content="Η επίσημη ιστοσελίδα της Γυμναστικής Ένωσης Σείριος Καλαμάτας. Volleyball, beach volley, προπονήσεις, νέα και δράσεις υποστήριξης." />
-    <meta property="og:title" content="Γ.Ε. Σείριος — Μαζί, ψηλότερα" />
-    <meta property="og:description" content="Volleyball και beach volley στην Καλαμάτα. Γνώρισε την ομάδα και έλα στην προπόνηση." />
+    <meta name="theme-color" content="#071b42" />
+    <meta name="description" content="Γ.Ε. Σείριος Καλαμάτας — Volleyball και Beach Volley. Πρόγραμμα προπονήσεων, νέα, φωτογραφίες και τρόποι συμμετοχής στην ομάδα." />
+    <meta property="og:locale" content="el_GR" />
     <meta property="og:type" content="website" />
+    <meta property="og:title" content="Γ.Ε. Σείριος | Volleyball & Beach Volley Καλαμάτα" />
+    <meta property="og:description" content="Άθληση, ομάδα και κοινότητα στην Καλαμάτα. Γνώρισε τον Γ.Ε. Σείριο και έλα στην προπόνηση." />
+    <meta property="og:image" content="/logo.svg" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Roboto+Condensed:ital,wght@0,700;0,800;1,800&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Roboto+Condensed:wght@700;800;900&amp;display=swap" rel="stylesheet" />
     <title>Γ.Ε. Σείριος | Volleyball &amp; Beach Volley Καλαμάτα</title>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
     <header class="site-header" id="top">
       <div class="nav-wrap container">
         <a class="brand" href="#top" aria-label="Γ.Ε. Σείριος — Αρχική">
-          <img src="/logo.svg" alt="" width="54" height="54" />
-          <span><strong>Γ.Ε. ΣΕΙΡΙΟΣ</strong><small>ΚΑΛΑΜΑΤΑ</small></span>
+          <img src="/logo.svg" alt="Λογότυπο Γ.Ε. Σείριος" width="62" height="62" />
+          <span><strong>Γ.Ε. ΣΕΙΡΙΟΣ</strong><small>VOLLEYBALL • KALAMATA</small></span>
         </a>
-        <button class="menu-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false"><span></span><span></span><span></span></button>
-        <nav class="main-nav" aria-label="Κύρια πλοήγηση">
-          <a href="#club">Ο Σύλλογος</a>
-          <a href="#sports">Αθλήματα</a>
-          <a href="#training">Προπονήσεις</a>
-          <a href="#news">Νέα</a>
-          <a href="#support">Υποστήριξη</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Επικοινωνία</a>
+        <button class="menu-toggle" aria-label="Άνοιγμα μενού" aria-controls="main-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+        <nav class="main-nav" id="main-nav" aria-label="Κύρια πλοήγηση">
+          <a href="#club">Ο Σύλλογος</a><a href="#volleyball">Volleyball</a><a href="#beach">Beach Volley</a><a href="#training">Προπονήσεις</a><a href="#news">Νέα</a><a href="#gallery">Gallery</a><a href="#friends">Φίλοι</a><a href="#sponsors">Χορηγοί</a>
         </nav>
-        <a class="nav-cta" href="#contact">Έλα στην ομάδα <span>→</span></a>
+        <a class="nav-cta" href="#contact">Έλα στην ομάδα <span aria-hidden="true">↗</span></a>
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-grid"></div><div class="hero-orb"></div>
-        <div class="container hero-content">
-          <p class="eyebrow light"><span></span> ΓΥΜΝΑΣΤΙΚΗ ΕΝΩΣΗ ΣΕΙΡΙΟΣ • ΚΑΛΑΜΑΤΑ</p>
-          <h1 id="hero-title">Η ΔΥΝΑΜΗ<br />ΤΗΣ <em>ΟΜΑΔΑΣ.</em></h1>
-          <p class="hero-copy">Volleyball και Beach Volley με πάθος, συνέπεια και αθλητικό πνεύμα. Μια ανοιχτή κοινότητα που εξελίσσεται μέσα και έξω από το γήπεδο.</p>
-          <div class="hero-actions">
-            <a class="button button-orange" href="#contact">Έλα στην ομάδα <span>↗</span></a>
-            <a class="button button-ghost" href="#support">Στήριξε τον Σείριο</a>
+        <div class="hero-lines" aria-hidden="true"></div>
+        <div class="container hero-layout">
+          <div class="hero-copyblock">
+            <p class="kicker kicker-light">ΓΥΜΝΑΣΤΙΚΗ ΕΝΩΣΗ ΣΕΙΡΙΟΣ <span>ΚΑΛΑΜΑΤΑ</span></p>
+            <h1 id="hero-title"><span>VOLLEYBALL</span><br /><strong>ΧΩΡΙΣ ΟΡΙΑ.</strong></h1>
+            <p class="hero-lead">Indoor και beach volley, μία ομάδα. Προπονούμαστε, εξελισσόμαστε και παίζουμε μαζί — με βάση την Καλαμάτα.</p>
+            <div class="actions"><a class="button button-primary" href="#contact">Έλα στην ομάδα <span>↗</span></a><a class="button button-outline" href="#training">Δες τις προπονήσεις</a></div>
+            <ul class="hero-tags" aria-label="Οι αξίες μας"><li>SPORT</li><li>TEAM</li><li>COMMUNITY</li></ul>
           </div>
-          <div class="hero-meta"><span><i>01</i> VOLLEYBALL</span><span><i>02</i> BEACH VOLLEY</span><span class="scroll">ΑΝΑΚΑΛΥΨΕ <b>↓</b></span></div>
+          <div class="hero-stage" aria-label="Χώρος για επίσημη φωτογραφία της ομάδας">
+            <div class="photo-placeholder photo-hero"><span class="photo-label">CLUB PHOTO</span><div class="volley-ball" aria-hidden="true"></div><p>PLAY<br /><b>TOGETHER.</b></p></div>
+            <div class="score-card"><small>Γ.Ε. ΣΕΙΡΙΟΣ</small><strong>VOLLEY + BEACH</strong><span>KALAMATA / GR</span></div>
+          </div>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="ball"><span></span></div><div class="slash one"></div><div class="slash two"></div>
-          <p>PLAY<br/><strong>AS ONE</strong></p>
-        </div>
+        <a class="scroll-cue" href="#club">ΑΝΑΚΑΛΥΨΕ <span>↓</span></a>
       </section>
 
-      <section class="intro section" id="club">
-        <div class="container intro-grid">
-          <div>
-            <p class="eyebrow"><span></span> Ο ΣΥΛΛΟΓΟΣ</p>
-            <h2>ΜΑΖΙ,<br /><em>ΨΗΛΟΤΕΡΑ.</em></h2>
-          </div>
-          <div class="intro-copy">
-            <p class="lead">Η Γυμναστική Ένωση Σείριος είναι ένας αθλητικός σύλλογος με βάση την Καλαμάτα και επίκεντρο την αγάπη για το volleyball.</p>
-            <p>Χτίζουμε μια ομάδα όπου η προσπάθεια, ο σεβασμός και η χαρά του αθλητισμού μας ενώνουν. Στόχος μας είναι ένα περιβάλλον που εμπνέει κάθε αθλητή και αθλήτρια να εξελίσσεται.</p>
-            <a class="text-link" href="#contact">ΓΝΩΡΙΣΕ ΤΟΝ ΣΕΙΡΙΟ <span>→</span></a>
-          </div>
+      <section class="section manifesto" id="club">
+        <div class="container editorial-grid">
+          <div><p class="kicker">Ο ΣΥΛΛΟΓΟΣ</p><h2>ΜΙΑ ΟΜΑΔΑ.<br /><em>ΔΥΟ ΓΗΠΕΔΑ.</em></h2></div>
+          <div class="rich-copy"><p class="lead">Η Γυμναστική Ένωση Σείριος είναι ένας αθλητικός σύλλογος με βάση την Καλαμάτα και επίκεντρο την αγάπη για το volleyball.</p><p>Η προσπάθεια, ο σεβασμός και η χαρά του παιχνιδιού μάς ενώνουν. Δημιουργούμε ένα ανοιχτό αθλητικό περιβάλλον για ανθρώπους που θέλουν να προπονηθούν, να εξελιχθούν και να ανήκουν σε μια ομάδα.</p><a class="arrow-link" href="#contact">Γνώρισε τον Σείριο <span>→</span></a></div>
         </div>
+        <div class="container value-strip"><span>01 <b>ΑΘΛΗΣΗ</b></span><span>02 <b>ΣΥΝΕΡΓΑΣΙΑ</b></span><span>03 <b>ΕΞΕΛΙΞΗ</b></span><span>04 <b>ΚΟΙΝΟΤΗΤΑ</b></span></div>
       </section>
 
-      <section class="sports section" id="sports">
-        <div class="container">
-          <div class="section-head"><div><p class="eyebrow light"><span></span> ΤΑ ΑΘΛΗΜΑΤΑ ΜΑΣ</p><h2>ΔΥΟ ΓΗΠΕΔΑ.<br /><em>ΕΝΑ ΠΑΘΟΣ.</em></h2></div><p>Από το παρκέ στην άμμο, παίζουμε με την ίδια ενέργεια και το ίδιο ομαδικό πνεύμα.</p></div>
-          <div class="sport-cards">
-            <article class="sport-card indoor">
-              <div class="card-number">01</div><div class="card-icon">◒</div>
-              <div class="sport-content"><p>INDOOR</p><h3>VOLLEYBALL</h3><span>Ταχύτητα, συνεργασία, ένταση.</span><a href="#training" aria-label="Πρόγραμμα Volleyball">→</a></div>
-            </article>
-            <article class="sport-card beach">
-              <div class="card-number">02</div><div class="sun"></div>
-              <div class="sport-content"><p>OUTDOOR</p><h3>BEACH<br />VOLLEY</h3><span>Ήλιος, άμμος, ελευθερία.</span><a href="#training" aria-label="Πρόγραμμα Beach Volley">→</a></div>
-            </article>
+      <section class="sports-section" id="sports" aria-label="Τα αθλήματά μας">
+        <article class="sport-panel sport-indoor" id="volleyball"><div class="sport-art indoor-art" aria-label="Θέση για φωτογραφία indoor volleyball"><span>INDOOR / 01</span></div><div class="sport-body"><p class="kicker kicker-light">INDOOR VOLLEYBALL</p><h2>ΕΝΤΑΣΗ.<br />ΡΥΘΜΟΣ.<br /><em>ΟΜΑΔΑ.</em></h2><p>Το indoor volleyball βασίζεται στην τεχνική, την επικοινωνία και τη συνεργασία. Επικοινώνησε μαζί μας για να δεις αν το πρόγραμμα ταιριάζει σε εσένα.</p><a class="button button-light" href="#contact">Ενδιαφέρομαι για Volleyball</a></div></article>
+        <article class="sport-panel sport-beach" id="beach"><div class="sport-art beach-art" aria-label="Θέση για φωτογραφία beach volley"><span>BEACH / 02</span></div><div class="sport-body"><p class="kicker">BEACH VOLLEY</p><h2>ΑΜΜΟΣ.<br />ΕΝΕΡΓΕΙΑ.<br /><em>ΕΛΕΥΘΕΡΙΑ.</em></h2><p>Η outdoor πλευρά του παιχνιδιού συνδυάζει κίνηση, τεχνική και συνεργασία στην άμμο. Ρώτησέ μας για συμμετοχή και διαθεσιμότητα.</p><a class="button button-dark" href="#contact">Ενδιαφέρομαι για Beach Volley</a></div></article>
+      </section>
+
+      <section class="section training" id="training">
+        <div class="container"><div class="section-heading"><div><p class="kicker">ΠΡΟΓΡΑΜΜΑ ΠΡΟΠΟΝΗΣΕΩΝ</p><h2>ΒΡΕΣ ΤΟΝ<br /><em>ΡΥΘΜΟ ΣΟΥ.</em></h2></div><p>Διάλεξε γήπεδο και έλα να γνωριστούμε. Επικοινώνησε πριν από την πρώτη σου προπόνηση.</p></div>
+          <div class="schedule-grid">
+            <article class="schedule-card"><div class="schedule-index">01 <span>INDOOR</span></div><h3>VOLLEYBALL</h3><dl><div><dt>ΗΜΕΡΕΣ</dt><dd>Δευτέρα &amp; Τετάρτη</dd></div><div><dt>ΩΡΑ</dt><dd>20:30–22:00</dd></div><div><dt>ΤΟΠΟΘΕΣΙΑ</dt><dd>Κλειστό Γήπεδο Πολυκλαδικού</dd></div></dl><a href="#contact">Δήλωσε ενδιαφέρον <span>↗</span></a></article>
+            <article class="schedule-card beach-schedule"><div class="schedule-index">02 <span>OUTDOOR</span></div><h3>BEACH VOLLEY</h3><dl><div><dt>ΗΜΕΡΕΣ</dt><dd>Τρίτη &amp; Πέμπτη</dd></div><div><dt>ΩΡΑ</dt><dd>20:30–22:00</dd></div><div><dt>ΤΟΠΟΘΕΣΙΑ</dt><dd>River West – Εκπαιδευτήρια Μπουγά</dd></div></dl><a href="#contact">Δήλωσε ενδιαφέρον <span>↗</span></a></article>
           </div>
         </div>
       </section>
 
-      <section class="training section" id="training">
-        <div class="container">
-          <div class="section-head dark"><div><p class="eyebrow"><span></span> ΠΡΟΠΟΝΗΣΕΙΣ</p><h2>ΒΡΕΣ ΤΟ<br /><em>ΡΥΘΜΟ ΣΟΥ.</em></h2></div><p>Διάλεξε γήπεδο και έλα να γνωριστούμε. Επικοινώνησε μαζί μας πριν από την πρώτη σου προπόνηση.</p></div>
-          <div class="schedule">
-            <article><div class="schedule-title"><span>01</span><div><small>INDOOR</small><h3>VOLLEYBALL</h3></div></div><div class="schedule-data"><div><small>ΗΜΕΡΕΣ</small><strong>Δευτέρα &amp; Τετάρτη</strong></div><div><small>ΩΡΑ</small><strong>20:30 — 22:00</strong></div><div><small>ΤΟΠΟΘΕΣΙΑ</small><strong>Κλειστό Γήπεδο<br />Πολυκλαδικού</strong></div></div><a href="#contact">ΔΗΛΩΣΕ ΕΝΔΙΑΦΕΡΟΝ <span>↗</span></a></article>
-            <article><div class="schedule-title"><span>02</span><div><small>OUTDOOR</small><h3>BEACH VOLLEY</h3></div></div><div class="schedule-data"><div><small>ΗΜΕΡΕΣ</small><strong>Τρίτη &amp; Πέμπτη</strong></div><div><small>ΩΡΑ</small><strong>20:30 — 22:00</strong></div><div><small>ΤΟΠΟΘΕΣΙΑ</small><strong>River West —<br />Εκπαιδευτήρια Μπουγά</strong></div></div><a href="#contact">ΔΗΛΩΣΕ ΕΝΔΙΑΦΕΡΟΝ <span>↗</span></a></article>
-          </div>
-        </div>
-      </section>
+      <section class="section news" id="news"><div class="container"><div class="section-heading"><div><p class="kicker">ΝΕΑ / EVENTS / ΤΟΥΡΝΟΥΑ</p><h2>ΜΕΙΝΕ ΣΤΟ<br /><em>ΠΑΙΧΝΙΔΙ.</em></h2></div><p>Εδώ θα δημοσιεύονται οι επίσημες ανακοινώσεις, οι δράσεις και τα νέα του συλλόγου.</p></div>
+        <div class="news-grid"><article class="news-card news-feature"><div class="news-image image-blue"><span>NEWS PHOTO</span></div><div class="news-content"><span class="chip">ΑΝΑΚΟΙΝΩΣΕΙΣ</span><time>ΕΝΗΜΕΡΩΣΕΙΣ ΣΥΝΤΟΜΑ</time><h3>Τα νέα της ομάδας, σε ένα σημείο.</h3><p>Η ενότητα είναι έτοιμη να φιλοξενήσει επίσημες ανακοινώσεις και ενημερώσεις του Γ.Ε. Σείριος.</p><span class="muted-link">Περιεχόμενο σύντομα</span></div></article><article class="news-card"><div class="news-image image-orange"><span>EVENT PHOTO</span></div><div class="news-content"><span class="chip">ΤΟΥΡΝΟΥΑ</span><h3>Επόμενες διοργανώσεις</h3><p>Οι επιβεβαιωμένες πληροφορίες για νέες διοργανώσεις θα εμφανίζονται εδώ.</p></div></article><article class="news-card"><div class="news-image image-sand"><span>TRAINING PHOTO</span></div><div class="news-content"><span class="chip">ΠΡΟΠΟΝΗΣΕΙΣ</span><h3>Μέσα από το γήπεδο</h3><p>Στιγμές και ενημερώσεις από τη δραστηριότητα της ομάδας.</p></div></article></div>
+      </div></section>
 
-      <section class="news section" id="news">
-        <div class="container">
-          <div class="title-row"><div><p class="eyebrow"><span></span> ΝΕΑ &amp; ΤΟΥΡΝΟΥΑ</p><h2>ΜΕΙΝΕ ΣΤΟ<br /><em>ΠΑΙΧΝΙΔΙ.</em></h2></div><span class="coming">ΝΕΟ ΠΕΡΙΕΧΟΜΕΝΟ ΣΥΝΤΟΜΑ</span></div>
-          <div class="news-grid">
-            <article class="featured-news"><div class="placeholder"><span>Γ.Ε.<br /><b>ΣΕΙΡΙΟΣ</b></span></div><div><small>ΑΝΑΚΟΙΝΩΣΕΙΣ</small><h3>Τα νέα της ομάδας έρχονται εδώ.</h3><p>Ανακοινώσεις, αγωνιστική δράση και νέα του συλλόγου θα δημοσιεύονται σε αυτή τη σελίδα.</p></div></article>
-            <article class="mini-news orange"><span>ΤΟΥΡΝΟΥΑ</span><h3>Μείνε συντονισμένος για τις επόμενες διοργανώσεις.</h3><b>→</b></article>
-            <article class="mini-news blue"><span>Η ΟΜΑΔΑ</span><h3>Στιγμές από προπονήσεις και δράσεις.</h3><b>→</b></article>
-          </div>
-        </div>
-      </section>
+      <section class="section gallery" id="gallery"><div class="container"><div class="section-heading light"><div><p class="kicker kicker-light">GALLERY</p><h2>Η ΟΜΑΔΑ<br /><em>ΣΕ ΚΙΝΗΣΗ.</em></h2></div><p>Ένα ευέλικτο φωτογραφικό αρχείο, έτοιμο να φιλοξενήσει αυθεντικές στιγμές του συλλόγου.</p></div>
+        <div class="gallery-filters" role="group" aria-label="Φίλτρα gallery"><button class="active" data-filter="all">Όλα</button><button data-filter="volley">Volleyball</button><button data-filter="beach">Beach Volley</button><button data-filter="training">Προπονήσεις</button><button data-filter="team">Η ομάδα</button></div>
+        <div class="gallery-grid"><button class="gallery-item gallery-wide g-volley" data-category="volley" data-title="Volleyball" aria-label="Άνοιγμα εικόνας Volleyball"><span>VOLLEYBALL</span><small>OFFICIAL PHOTO PLACEHOLDER</small></button><button class="gallery-item g-beach" data-category="beach" data-title="Beach Volley" aria-label="Άνοιγμα εικόνας Beach Volley"><span>BEACH VOLLEY</span><small>OFFICIAL PHOTO PLACEHOLDER</small></button><button class="gallery-item g-training" data-category="training" data-title="Προπονήσεις" aria-label="Άνοιγμα εικόνας Προπονήσεις"><span>ΠΡΟΠΟΝΗΣΕΙΣ</span><small>OFFICIAL PHOTO PLACEHOLDER</small></button><button class="gallery-item gallery-wide g-team" data-category="team" data-title="Η ομάδα" aria-label="Άνοιγμα εικόνας Η ομάδα"><span>Η ΟΜΑΔΑ</span><small>OFFICIAL PHOTO PLACEHOLDER</small></button></div>
+      </div></section>
 
-      <section class="support section" id="support">
-        <div class="container">
-          <div class="support-top"><div><p class="eyebrow light"><span></span> ΦΙΛΟΙ &amp; ΥΠΟΣΤΗΡΙΚΤΕΣ</p><h2>ΓΙΝΕ ΜΕΡΟΣ<br />ΤΗΣ <em>ΠΡΟΣΠΑΘΕΙΑΣ.</em></h2></div><p>Η στήριξή σου μας δίνει δύναμη να συνεχίσουμε. Διάλεξε την κατηγορία που σου ταιριάζει.</p></div>
-          <div class="support-cards">
-            <article><span class="tier">FRIEND</span><div class="price"><b>€10</b><small>/ ΧΡΟΝΟ</small></div><p>Μια απλή κίνηση που μας φέρνει πιο κοντά.</p><a href="#contact">ΕΠΙΛΟΓΗ <span>→</span></a></article>
-            <article class="silver"><span class="tier">SILVER SUPPORTER</span><div class="price"><b>€20</b><small>/ ΧΡΟΝΟ</small></div><p>Σταθερή υποστήριξη στην προσπάθεια του συλλόγου.</p><a href="#contact">ΕΠΙΛΟΓΗ <span>→</span></a></article>
-            <article class="gold"><span class="popular">ΞΕΧΩΡΙΣΤΗ ΣΤΗΡΙΞΗ</span><span class="tier">GOLD SUPPORTER</span><div class="price"><b>€50</b><small>/ ΧΡΟΝΟ</small></div><p>Δυνατή συμβολή στην εξέλιξη και τις δράσεις μας.</p><a href="#contact">ΕΠΙΛΟΓΗ <span>→</span></a></article>
-          </div>
-          <p class="legal-note"><span>i</span> Οι παραπάνω επιλογές αποτελούν κατηγορίες υποστήριξης και δεν συνιστούν καταστατική ιδιότητα μέλους του σωματείου.</p>
-        </div>
-      </section>
+      <section class="section friends" id="friends"><div class="container"><div class="friends-intro"><div><p class="kicker kicker-light">ΦΙΛΟΙ ΤΟΥ ΣΕΙΡΙΟΥ</p><h2>ΓΙΝΕ ΜΕΡΟΣ<br /><em>ΤΟΥ ΠΑΙΧΝΙΔΙΟΥ.</em></h2></div><p>Ο Σείριος μεγαλώνει μέσα και έξω από το γήπεδο. Διάλεξε τον δικό σου, προαιρετικό τρόπο να είσαι μαζί μας. Μια μικρή κίνηση, ένα μεγάλο high-five.</p></div>
+        <h3 class="group-title">ΜΙΚΡΕΣ ΚΙΝΗΣΕΙΣ / ΜΕΓΑΛΗ ΕΝΕΡΓΕΙΑ</h3><div class="support-grid playful"><button class="support-card" data-support="Κέρασε μια προπόνηση" data-amount="5"><span>01</span><div class="support-icon">✦</div><h4>ΚΕΡΑΣΕ ΜΙΑ ΠΡΟΠΟΝΗΣΗ</h4><b>€5</b><p>Μια φιλική κίνηση για την καθημερινότητα της ομάδας.</p></button><button class="support-card" data-support="Στήριξε το Beach Volley" data-amount="10"><span>02</span><div class="support-icon">☀</div><h4>ΣΤΗΡΙΞΕ ΤΟ BEACH VOLLEY</h4><b>€10</b><p>Μικρή συμβολή στις δραστηριότητες beach volley.</p></button><button class="support-card" data-support="Υιοθέτησε μια μπάλα" data-amount="20"><span>03</span><div class="support-icon">◉</div><h4>ΥΙΟΘΕΤΗΣΕ ΜΙΑ ΜΠΑΛΑ</h4><b>€20</b><p>Βάλε μια μπάλα στο παιχνίδι: η συμβολή υποστηρίζει αγορά και ανανέωση αθλητικού εξοπλισμού, χωρίς να συνεπάγεται κυριότητα συγκεκριμένης μπάλας.</p></button></div>
+        <h3 class="group-title">ΕΤΗΣΙΕΣ ΚΑΤΗΓΟΡΙΕΣ ΥΠΟΣΤΗΡΙΞΗΣ</h3><div class="support-grid tiers"><button class="tier-card" data-support="Φίλος του Σείριου" data-amount="10"><span>FRIEND</span><b>€10<small>/ χρόνο</small></b><p>ΦΙΛΟΣ ΤΟΥ ΣΕΙΡΙΟΥ</p></button><button class="tier-card" data-support="Silver Supporter" data-amount="20"><span>SILVER</span><b>€20<small>/ χρόνο</small></b><p>SILVER SUPPORTER</p></button><button class="tier-card tier-gold" data-support="Gold Supporter" data-amount="50"><span>GOLD</span><b>€50<small>/ χρόνο</small></b><p>GOLD SUPPORTER</p></button></div>
+        <div class="support-checkout" id="support-checkout"><div><p class="kicker kicker-light">ΤΟ ΔΙΚΟ ΣΟΥ ΠΟΣΟ</p><h3>Εσύ διαλέγεις.<br />Εμείς λέμε απλώς ευχαριστώ.</h3><p>Επίλεξε έναν τρόπο ή ποσό από €2. Η online πληρωμή δεν έχει ακόμη συνδεθεί.</p></div><div class="amount-panel"><p id="support-choice">Επίλεξε ποσό</p><div class="quick-amounts" role="group" aria-label="Επιλογή ποσού"><button data-amount="2">€2</button><button data-amount="5">€5</button><button data-amount="10">€10</button><button data-amount="20">€20</button><button data-amount="50">€50</button><button data-custom>Άλλο ποσό</button></div><label class="custom-amount" hidden>Ποσό σε ευρώ<input type="number" min="2" step="1" inputmode="numeric" placeholder="Από €2" /></label><button class="button button-primary payment-button" type="button" disabled>Η ΠΛΗΡΩΜΗ ΔΕΝ ΕΙΝΑΙ ΑΚΟΜΗ ΔΙΑΘΕΣΙΜΗ</button><small>Απαιτείται σύνδεση με εγκεκριμένο πάροχο πληρωμών. Δεν αποθηκεύονται στοιχεία πληρωμής.</small></div></div>
+        <p class="support-disclaimer"><b>Διευκρίνιση:</b> Οι επιλογές είναι προαιρετικές κατηγορίες υποστήριξης. Δεν αποτελούν καταστατική ιδιότητα μέλους και δεν παρέχουν αυτομάτως δικαίωμα ψήφου ή συμμετοχής στη διοίκηση.</p>
+      </div></section>
 
-      <section class="sponsors section" id="sponsors">
-        <div class="container"><p class="eyebrow"><span></span> ΧΟΡΗΓΟΙ</p><div class="sponsor-heading"><h2>ΟΙ ΣΥΜΜΑΧΟΙ<br /><em>ΤΗΣ ΟΜΑΔΑΣ.</em></h2><p>Ευχαριστούμε όσους επιλέγουν να σταθούν δίπλα στον αθλητισμό και την τοπική κοινότητα.</p></div><div class="sponsor-slots"><div><span>✦</span>ΘΕΣΗ ΧΟΡΗΓΟΥ</div><div><span>✦</span>ΘΕΣΗ ΧΟΡΗΓΟΥ</div><div><span>✦</span>ΘΕΣΗ ΧΟΡΗΓΟΥ</div><div><span>✦</span>ΘΕΣΗ ΧΟΡΗΓΟΥ</div></div><a class="text-link" href="#contact">ΓΙΝΕ ΧΟΡΗΓΟΣ <span>→</span></a></div>
-      </section>
+      <section class="section sponsors" id="sponsors"><div class="container"><div class="section-heading"><div><p class="kicker">ΕΠΑΓΓΕΛΜΑΤΙΚΕΣ ΣΥΝΕΡΓΑΣΙΕΣ</p><h2>ΠΑΙΞΕ ΜΑΖΙ ΜΑΣ.<br /><em>ΠΡΟΒΑΛΕ ΤΗΝ ΕΠΙΧΕΙΡΗΣΗ ΣΟΥ.</em></h2></div><p>Ένα ξεχωριστό πρόγραμμα συνεργασιών για επιχειρήσεις που θέλουν να συνδεθούν με τον αθλητισμό και την τοπική κοινότητα.</p></div>
+        <div class="package-grid" id="packages"><article><span>01</span><h3>STARTER<br />SPONSOR</h3><p>Απλή, καθαρή παρουσία δίπλα στον σύλλογο.</p><ul><li>Όνομα και λογότυπο</li><li>Παρουσία στην ιστοσελίδα</li><li>Αναφορά σε επιλεγμένη επικοινωνία</li></ul><a href="#sponsor-form">Ζήτησε πληροφορίες →</a></article><article class="package-featured"><span>02 / PLUS</span><h3>PLUS<br />SPONSOR</h3><p>Ισχυρότερη φυσική και ψηφιακή προβολή.</p><ul><li>Ενισχυμένη online παρουσία</li><li>Social media αναφορές</li><li>Προβολή σε επιλεγμένες δράσεις</li></ul><a href="#sponsor-form">Ζήτησε πληροφορίες →</a></article><article><span>03</span><h3>PREMIUM<br />SPONSOR</h3><p>Ολοκληρωμένη συνεργασία με μέγιστη προβολή.</p><ul><li>Προτεραιότητα προβολής</li><li>Event και έντυπη παρουσία</li><li>Προσαρμοσμένες ενέργειες</li></ul><a href="#sponsor-form">Επικοινώνησε μαζί μας →</a></article><article><span>04</span><h3>DIGITAL<br />SPONSOR</h3><p>Συνεργασία με έμφαση στα ψηφιακά κανάλια.</p><ul><li>Website profile και σύνδεσμος</li><li>Επιλεγμένο social περιεχόμενο</li><li>Digital collaborations</li></ul><a href="#sponsor-form">Ζήτησε πληροφορίες →</a></article></div>
+        <p class="package-note">Οι τελικές παροχές, τα μέσα, η διάρκεια και η διαθεσιμότητα καθορίζονται αποκλειστικά στην εκάστοτε συμφωνία χορηγίας.</p>
+        <div class="sponsor-showcase"><p>ΧΩΡΟΣ ΕΠΙΣΗΜΩΝ ΣΥΝΕΡΓΑΤΩΝ</p><div><span>PREMIUM<br /><small>LOGO PLACEHOLDER</small></span><span>PLUS<br /><small>LOGO PLACEHOLDER</small></span><span>STARTER<br /><small>LOGO PLACEHOLDER</small></span></div></div>
+        <div class="sponsor-enquiry" id="sponsor-form"><div><p class="kicker kicker-light">ΓΙΝΕ ΧΟΡΗΓΟΣ</p><h2>ΑΣ ΜΙΛΗΣΟΥΜΕ<br /><em>ΓΙΑ ΣΥΝΕΡΓΑΣΙΑ.</em></h2><p>Στείλε τα βασικά στοιχεία και η πρόθεσή σου θα προετοιμαστεί για αποστολή μέσω της εφαρμογής email σου.</p><a class="button button-outline" href="#packages">Δες τα πακέτα</a></div><form class="configured-form" data-form-type="sponsor"><label>Επωνυμία επιχείρησης<input required name="company" autocomplete="organization" /></label><label>Υπεύθυνος επικοινωνίας<input required name="contact" autocomplete="name" /></label><label>Email<input required type="email" name="email" autocomplete="email" /></label><label>Τηλέφωνο<input type="tel" name="phone" autocomplete="tel" /></label><label>Website / Social Media<input type="url" name="website" placeholder="https://" /></label><label>Πακέτο ενδιαφέροντος<select name="package"><option>Starter Sponsor</option><option>Plus Sponsor</option><option>Premium Sponsor</option><option>Digital Sponsor</option><option>Θέλω να το συζητήσουμε</option></select></label><label class="full">Μήνυμα<textarea required name="message" rows="4"></textarea></label><button class="button button-primary full" type="submit">Γίνε χορηγός <span>↗</span></button><p class="form-status full" aria-live="polite"></p></form></div>
+      </div></section>
 
-      <section class="gallery section" id="gallery">
-        <div class="container"><div class="title-row"><div><p class="eyebrow light"><span></span> GALLERY</p><h2>ΜΕΣΑ ΑΠΟ<br /><em>ΤΟ ΦΑΚΟ.</em></h2></div><p>Οι στιγμές της ομάδας θα βρίσκουν τη θέση τους εδώ.</p></div><div class="gallery-grid"><div class="gallery-item g1"><span>VOLLEYBALL</span></div><div class="gallery-item g2"><span>BEACH VOLLEY</span></div><div class="gallery-item g3"><span>ΠΡΟΠΟΝΗΣΗ</span></div></div></div>
-      </section>
-
-      <section class="contact section" id="contact">
-        <div class="container contact-grid"><div><p class="eyebrow light"><span></span> ΕΠΙΚΟΙΝΩΝΙΑ</p><h2>ΕΤΟΙΜΟΣ<br />ΓΙΑ <em>SERVE;</em></h2><p>Θέλεις να έρθεις στην ομάδα, να μας υποστηρίξεις ή απλώς να μάθεις περισσότερα; Στείλε μας μήνυμα.</p></div><form id="contact-form"><label>ΟΝΟΜΑΤΕΠΩΝΥΜΟ<input required name="name" autocomplete="name" placeholder="Το όνομά σου" /></label><label>EMAIL<input required type="email" name="email" autocomplete="email" placeholder="name@example.com" /></label><label>ΕΝΔΙΑΦΕΡΟΜΑΙ ΓΙΑ<select name="interest"><option>Συμμετοχή στην ομάδα</option><option>Πρόγραμμα υποστηρικτών</option><option>Χορηγία</option><option>Άλλο</option></select></label><label>ΜΗΝΥΜΑ<textarea required name="message" rows="3" placeholder="Γράψε το μήνυμά σου..."></textarea></label><button class="button button-orange" type="submit">ΑΠΟΣΤΟΛΗ ΜΗΝΥΜΑΤΟΣ <span>↗</span></button><p class="form-status" aria-live="polite"></p></form></div>
-      </section>
+      <section class="section contact" id="contact"><div class="container contact-grid"><div><p class="kicker kicker-light">ΕΠΙΚΟΙΝΩΝΙΑ / JOIN THE TEAM</p><h2>ΕΤΟΙΜΟΣ<br />ΓΙΑ <em>SERVE;</em></h2><p>Θέλεις να έρθεις στην ομάδα ή να μάθεις περισσότερα; Συμπλήρωσε τα στοιχεία σου. Δεν γίνεται αυτόματη αποστολή χωρίς σύνδεση υπηρεσίας φόρμας.</p><div class="contact-prompt"><span>01</span>ΔΙΑΛΕΞΕ ΔΡΑΣΤΗΡΙΟΤΗΤΑ <span>02</span>ΣΤΕΙΛΕ ΤΟ ΜΗΝΥΜΑ</div></div><form id="contact-form" class="configured-form" data-form-type="contact"><label>Ονοματεπώνυμο<input required name="name" autocomplete="name" placeholder="Το όνομά σου" /></label><label>Email<input required type="email" name="email" autocomplete="email" placeholder="name@example.com" /></label><label>Τηλέφωνο<input type="tel" name="phone" autocomplete="tel" /></label><label>Ενδιαφέρομαι για<select name="interest"><option>Συμμετοχή στην ομάδα</option><option>Volleyball</option><option>Beach Volley</option><option>Φίλοι του Σείριου</option><option>Χορηγία</option><option>Άλλο</option></select></label><label class="full">Μήνυμα<textarea required name="message" rows="5" placeholder="Γράψε το μήνυμά σου..."></textarea></label><button class="button button-primary full" type="submit">Προετοιμασία μηνύματος <span>↗</span></button><p class="form-status full" aria-live="polite"></p></form></div></section>
     </main>
 
-    <footer><div class="container footer-main"><a class="brand footer-brand" href="#top"><img src="/logo.svg" alt="" width="68" height="68" /><span><strong>Γ.Ε. ΣΕΙΡΙΟΣ</strong><small>ΚΑΛΑΜΑΤΑ</small></span></a><p>ΠΑΙΖΟΥΜΕ ΜΑΖΙ.<br /><b>ΠΡΟΧΩΡΑΜΕ ΜΑΖΙ.</b></p><div class="footer-links"><a href="#club">Ο Σύλλογος</a><a href="#sports">Volleyball</a><a href="#sports">Beach Volley</a><a href="#training">Προπονήσεις</a><a href="#news">Νέα &amp; Τουρνουά</a><a href="#support">Υποστηρικτές</a><a href="#sponsors">Χορηγοί</a><a href="#gallery">Gallery</a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Γ.Ε. ΣΕΙΡΙΟΣ. ΟΛΑ ΤΑ ΔΙΚΑΙΩΜΑΤΑ ΔΙΑΤΗΡΟΥΝΤΑΙ.</span><a href="#top">ΠΙΣΩ ΣΤΗΝ ΚΟΡΥΦΗ ↑</a></div></footer>
+    <footer><div class="container footer-top"><div><a class="brand footer-brand" href="#top"><img src="/logo.svg" alt="Γ.Ε. Σείριος" width="82" height="82" /><span><strong>Γ.Ε. ΣΕΙΡΙΟΣ</strong><small>VOLLEYBALL • BEACH VOLLEY</small></span></a><p>SPORT. TEAM. COMMUNITY.<br /><b>ΠΑΙΖΟΥΜΕ ΜΑΖΙ.</b></p></div><div><h3>ΑΘΛΗΤΙΣΜΟΣ</h3><a href="#volleyball">Volleyball</a><a href="#beach">Beach Volley</a><a href="#training">Προπονήσεις</a><a href="#gallery">Gallery</a></div><div><h3>ΣΥΛΛΟΓΟΣ</h3><a href="#club">Ο Σύλλογος</a><a href="#news">Νέα</a><a href="#friends">Φίλοι του Σείριου</a><a href="#sponsors">Χορηγοί</a></div><div><h3>ΕΠΙΚΟΙΝΩΝΙΑ</h3><a href="#contact">Έλα στην ομάδα</a><a href="#sponsor-form">Επαγγελματικές συνεργασίες</a><span class="footer-muted">Social links θα προστεθούν όταν επιβεβαιωθούν.</span></div></div><div class="container footer-bottom"><span>© <span id="year"></span> Γ.Ε. ΣΕΙΡΙΟΣ. ΟΛΑ ΤΑ ΔΙΚΑΙΩΜΑΤΑ ΔΙΑΤΗΡΟΥΝΤΑΙ.</span><a href="#top">ΠΙΣΩ ΣΤΗΝ ΚΟΡΥΦΗ ↑</a></div></footer>
+
+    <dialog class="lightbox" aria-labelledby="lightbox-title"><button class="lightbox-close" aria-label="Κλείσιμο">×</button><div class="lightbox-image"></div><p id="lightbox-title"></p><small>Θέση για επίσημη φωτογραφία του συλλόγου</small></dialog>
     <script src="/src/main.js" defer></script>
   </body>
 </html>

@@ -7,7 +7,8 @@
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
     "preview": "node scripts/serve.mjs dist",
-    "check": "node --check src/main.js && node scripts/build.mjs",
+    "check": "node --check src/main.js && node --check worker.js && node --test && node scripts/build.mjs",
+    "test": "node --test",
     "deploy": "npx wrangler deploy"
   }
 }

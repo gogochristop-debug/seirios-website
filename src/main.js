@@ -21,11 +21,36 @@ nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', clos
 document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeMenu(); });
 window.addEventListener('resize', () => { if (window.innerWidth > 1100) closeMenu(); });
 
-document.querySelectorAll('.configured-form').forEach((form) => form.addEventListener('submit', (event) => {
+document.querySelectorAll('.configured-form').forEach((form) => form.addEventListener('submit', async (event) => {
   event.preventDefault();
   const status = form.querySelector('.form-status');
-  if (!form.checkValidity()) { form.reportValidity(); if (status) status.textContent = 'Έλεγξε τα υποχρεωτικά πεδία.'; return; }
-  if (status) status.textContent = 'Η φόρμα είναι έτοιμη, αλλά απαιτείται σύνδεση ασφαλούς υπηρεσίας αποστολής.';
+  const submitButton = form.querySelector('button[type="submit"]');
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    if (status) { status.textContent = 'Έλεγξε τα υποχρεωτικά πεδία.'; status.dataset.state = 'error'; }
+    return;
+  }
+  if (submitButton?.disabled) return;
+
+  const idleLabel = submitButton?.textContent;
+  if (submitButton) { submitButton.disabled = true; submitButton.textContent = 'Αποστολή…'; }
+  if (status) { status.textContent = 'Το μήνυμα αποστέλλεται…'; status.dataset.state = 'sending'; }
+
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify(Object.fromEntries(new FormData(form))),
+    });
+    const result = await response.json().catch(() => null);
+    if (!response.ok || !result?.ok) throw new Error(result?.error || 'Δεν ήταν δυνατή η αποστολή. Δοκίμασε ξανά αργότερα.');
+    form.reset();
+    if (status) { status.textContent = 'Το μήνυμά σου στάλθηκε με επιτυχία. Θα επικοινωνήσουμε σύντομα.'; status.dataset.state = 'success'; }
+  } catch (error) {
+    if (status) { status.textContent = error.message || 'Παρουσιάστηκε πρόβλημα κατά την αποστολή. Δοκίμασε ξανά.'; status.dataset.state = 'error'; }
+  } finally {
+    if (submitButton) { submitButton.disabled = false; submitButton.textContent = idleLabel; }
+  }
 }));
 
 const supportChoice = document.querySelector('#support-choice');
